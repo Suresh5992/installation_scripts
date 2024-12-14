@@ -1,0 +1,84 @@
+Ways to install k8s 
+Kubeadm 
+Minikube 
+Kops 
+K8s in gcp 
+
+On Master & worker node 
+Step 1:  [Both Mater and Node] 
+sudo su  -  
+apt-get update   
+apt-get install docker.io -y 
+
+  Step 2: [Both Mater and Node] 
+service docker restart   
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -   
+
+Step 3: update the repo [Both Mater and Node] 
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" >/etc/apt/sources.list.d/kubernetes.list 
+apt-get update 
+
+
+Step 4 : run this [Mater and Node]  
+apt install kubeadm=1.20.0-00 kubectl=1.20.0-00 kubelet=1.20.0-00 -y   
+
+Step5 : 
+
+On Master: [ only  on master ]
+   kubeadm init --pod-network-cidr=192.168.0.0/16 
+
+Note : start install all Kubernetes things in master . It will time taken process  
+
+In master :  you will see like this at the end 
+
+Kubeadm join 172. ...token .....[copy it ]  
+
+Paste in Node [ through this we can make a connection]  
+
+   >Copy the token and paste it into the worker node. 
+
+Step6: 
+On Master: only  
+  exit 
+  mkdir -p $HOME/.kube 
+
+Step7: set up path  
+    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 
+    sudo chown $(id -u):$(id -g) $HOME/.kube/config 
+
+Step8 : 
+On Master: only  
+kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
+
+Step9 : 
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml 
+
+Step 10 : [only in master ] 
+Checking in Mater node is connected or not  
+Kubectl get nodes  
+
+You must see in Mater  
+1. control-plane
+2.  ip of node (must) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Our Kubernetes installation and configuration are complete 
+
+ 
