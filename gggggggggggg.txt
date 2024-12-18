@@ -1,0 +1,43 @@
+git config --global user.name "suresh"
+
+git config --global user.name "surya.k9010@gmail.com"
+
+git init
+
+git clone https://github.com/Suresh5992/Devops-test.git
+
+git add .
+
+git status
+
+git commit -m "added files"
+
+git commit -a [ check if there any file is missinng to command 
+
+git diff [ what is you have changed , that will Displayed]
+
+git diff --staged [   files in the staging area and the latest version present.]
+
+ git reset  master [ checked the branch ] 
+
+git diff master  main [ check the Different two branch master and main] 
+
+git reset –hard master  [ HEAD is now at 4b91d84 added ] 
+
+git log [ check the HEAD->Master ] 
+
+
+git log --follow suresh.txt  [  you will get id 40 to 60 digits  4b91d842c65b04b50ffc02ee3dc10ed591690f0d ] 
+git show 4b91d842c65b04b50ffc02ee3dc10ed591690f0d
+
+git tag 4b91d842c65b04b50ffc02ee3dc10ed591690f0d
+
+git branch [ tells How many Branch are there ] 
+
+git branch -d main [ delete main branch ] 
+ 
+ git checkout -b main [ creates a new branch and also switches ] 
+
+git checkout  master [ checkout one branch to other ] 
+
+git branch [ check how many branch ] 
