@@ -61,3 +61,12 @@ docker container ls
 echo "Java 11, Docker, and SonarQube have been installed successfully!"
 echo "Access SonarQube at: http://<server-ip>:9000"
 
+
+#docker stop 
+docker stop 2e1286ed8cfd
+docker rm 2e1286ed8cfd
+
+docker rmi sonarqube
+
+check images
+
