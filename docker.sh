@@ -6,7 +6,17 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y
 
-docker info 
+sudo apt update
+sudo apt install docker.io -y
+
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+
+sudo systemctl status docker
+
+ls -l /var/run/docker.sock
 
 sudo chmod 777 /var/run/docker.sock
 
