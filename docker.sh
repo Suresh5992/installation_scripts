@@ -40,6 +40,15 @@ docker conatiner ls
 
 # till here is sufficient 
 
+________________________________________________________________________________
+
+
+
+docker cp /home/ubuntu/Basic_HTML_wesite/. 1c3ab886c0e9:/var/www/html/     [ apache2 ]
+
+docker exec -it 1c3ab886c0e9 /bin/bash
+
+rm -r book index.html index_files  [ you nust in docker contianer] 
 
 # if you are confustion 
 #youtube link :  https://www.youtube.com/watch?v=8KZi7KBpk0I&t=3s 
