@@ -69,4 +69,7 @@ docker rm 2e1286ed8cfd
 docker rmi sonarqube
 
 check images
+docker images 
 
+again run docker 
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
