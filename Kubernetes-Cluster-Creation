@@ -44,3 +44,9 @@ note is some thing went wrong
    Through Shell Script :
 
    curl https://raw.githubusercontent.com/Msocial123/k8-install-eks/master/eks-client.sh | sudo bash
+
+
+
+# Follow this documents Always
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.30/
