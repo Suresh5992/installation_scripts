@@ -5,3 +5,13 @@ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-k
 echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
 sudo apt-get update
 sudo apt-get install trivy
+
+to scan 
+docker pull muralisocial123/transcation-bank-app
+
+trivy image muralisocial123/transcation-bank-app --format json > output.json
+
+cat output.json
+
+
+
