@@ -21,6 +21,10 @@ sudo ./aws/install
    21  aws configure
    22  clear
 #### Install EKSCTL #######
+
+Before going this make sure if you have previous Cluster Delete first 
+1.EKS [ most important ] 
+2.CLOUD FORMATION + check in STACK also most important 
    23   eksctl create cluster \
   --name test-cluster \
   --version 1.31 \
