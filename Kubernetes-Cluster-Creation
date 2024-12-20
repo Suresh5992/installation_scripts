@@ -26,7 +26,7 @@ Before going this make sure if you have previous Cluster Delete first
 1.EKS [ most important ] 
 2.CLOUD FORMATION + check in STACK also most important 
    23   eksctl create cluster \
-  --name suresh \
+  --name suresh \       [ suresh is cluster name you can change whill create new cluster  ]  
   --version 1.31 \
   --region ap-southeast-1 \
   --nodegroup-name test-linux \
@@ -42,7 +42,7 @@ note is some thing went wrong
 
    25  kubectl get nodes
    26 
-   27  aws eks update-kubeconfig --name test-cluster --region ap-southeast-1
+   27  aws eks update-kubeconfig --name test-cluster --region ap-southeast-1    [ test-cluster is cluster Name ] 
    28  history
 
    Through Shell Script :
