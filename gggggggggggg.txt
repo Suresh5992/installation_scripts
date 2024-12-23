@@ -38,6 +38,8 @@ git branch -d main [ delete main branch ]
  
  git checkout -b main [ creates a new branch and also switches ] 
 
+ git clone -b master https://github.com/Msocial123/Retail-App_kubernetes.git   [ to copy master ] 
+
 git checkout  master [ checkout one branch to other ] 
 
 git branch [ check how many branch ] 
