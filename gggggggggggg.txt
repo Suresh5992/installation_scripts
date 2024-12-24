@@ -14,6 +14,10 @@ git commit -m "added files"
 
 git commit -a [ check if there any file is missinng to command 
 
+git log --author="suresh"  [you can check the history to see if "suresh" made any commits] 
+
+git remote -v [ "suresh" is associated with a remote repositor ] 
+
 git diff [ what is you have changed , that will Displayed]
 
 git diff --staged [   files in the staging area and the latest version present.]
