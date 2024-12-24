@@ -47,3 +47,27 @@ git branch -d main [ delete main branch ]
 git checkout  master [ checkout one branch to other ] 
 
 git branch [ check how many branch ] 
+
+___________________________________________________________
+push Debug 
+
+git push origin master --force
+git remote set-url origin <correct-URL>  [This should show the URL for origin. If it's not pointing to the right place, you can set it like so] 
+git log origin/master..HEAD  [ Run this command to see if there are any local commits that haven’t been pushed to the remote] 
+git push origin master
+It’s also possible that the remote master branch has changes that you don’t have locally. You can fetch those changes and merge them with your local branch:
+git fetch origin
+git merge origin/master
+git push origin master --force
+git add ../README.md [ if some files miss then ADD and push  ] 
+git add ../index.html
+git add -A
+git commit -m "Add new files and update README, delete index.html"
+git push origin master
+
+
+
+
+
+
+
