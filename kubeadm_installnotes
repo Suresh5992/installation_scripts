@@ -54,7 +54,8 @@ Step9 :  [  On Master: only  ]
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml 
 
 Step 10 : [only in master ] 
-Checking in Mater node is connected or not  
+Checking in Mater node is connected or not 
+[ master ] 
 Kubectl get nodes  
 
 You must see in Mater  
