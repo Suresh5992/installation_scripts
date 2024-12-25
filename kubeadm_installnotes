@@ -50,7 +50,7 @@ Step8 :
 On Master: only  
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
 
-Step9 : 
+Step9 :  [  On Master: only  ] 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml 
 
 Step 10 : [only in master ] 
