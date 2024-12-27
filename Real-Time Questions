@@ -1,3 +1,6 @@
+this should be must do good in-depth Exposure on kubernetes, jenkins and Docker  more based on kubernetes 
+
+
 What are the security benefits of shift-left testing?
 What is the purpose of staging in a CI/CD pipeline?
 What is Blue-Green Deployment?
@@ -46,3 +49,24 @@ Do pods get assigned unique IPs or do they store pod IP addresses in ConfigMaps?
 How are scaled-down pods handled in a Kubernetes Deployment?
 What happens when the associated node of a pod goes offline?
 What is the purpose of a service account in Kubernetes?
+
+
+more Kubernetes  questions 
+
+kubernetes 
+
+1 what is key Difference between emptyDir and hostPath volumes in kubernetes
+2 how can you mount a kubernetes configmap into jenkins agent pod during a pipeline Execution
+3 which ApI group is used to defined Role and clusterRole in kubernetes
+4 what is key benefit of using a kubernetes emptyDir volumes for jenkins pipelines
+5 what is Difference between roles and clusterRole in kubernetes 
+6 what is jenkins Agent 
+7 how does jenkins communicate with kubernetes to dynamically provision agents
+8 what is primary purpose of interfrating kubernetes volumes with jenkins 
+9 which volume type store data that persists even it the pod is deleted 
+10 how you verify the roles assigned to user in kubernetes
+11 how can jenkins pipeline use Docker to build and deploy Application 
+12 how does jenkins handle credenitals securely
+13 what is purpose of RoleBinding
+14 what does ReadwriteOnce Access mode for persists Volumes allow
+15 in jenkins Pipeline Running on kubernetes where should workspace directories typically be stored 
