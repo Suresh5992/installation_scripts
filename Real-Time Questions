@@ -1,0 +1,48 @@
+What are the security benefits of shift-left testing?
+What is the purpose of staging in a CI/CD pipeline?
+What is Blue-Green Deployment?
+What does git rebase do?
+What is the difference between git fetch and git pull changes?
+Which Jenkins pipeline syntax is used to integrate with SonarQube environment?
+Which pipeline stage in Jenkins is typically used for running static code analysis like SonarQube?
+What is the significance of "new code" in SonarQube?
+What is the severity level assigned to a new code smell in SonarQube?
+How does SonarQube maintain the maintainability rating of a codebase?
+What is the primary purpose of the reliability rating metric in SonarQube?
+What is the primary purpose of the Quality Gate in SonarQube?
+In a Jenkins pipeline, how can we define the SonarQube analysis step?
+What is the purpose of waitForQualityGate() function in a Jenkins pipeline integrated with SonarQube?
+What does "Technical Debt" measure in SonarQube?
+Which metric in SonarQube indicates the amount of technical debt in a project?
+Which Jenkins pipeline stage is required to use the Declarative pipeline for SonarQube analysis?
+Which Jenkins plugin is used to integrate with SonarQube?
+What is the default network mode for a Docker container?
+How to ensure that a Docker container only has access to specific network resources?
+How can we set CPU and memory limits for a Docker container?
+How to remove all stopped containers in Docker in a single command?
+What is a "daemonized" container in Docker?
+When using Docker in Swarm mode, what is the purpose of the docker service command?
+What does the docker network inspect command do?
+How can you view the logs in a daemonized Docker container?
+How can you prevent a container from restarting automatically in Docker?
+What is the Docker command to view all running containers?
+What is the purpose of the docker-compose.yml file?
+What is the default storage driver used by Docker on Linux?
+What is the difference between Docker and traditional virtualization?
+What is the function of Docker volumes?
+Which Kubernetes component defines permissions for users or applications?
+When you create custom resources in Kubernetes, which component is responsible for extending the API?
+What is the use of ConfigMap in Kubernetes?
+What is the use of StatefulSet in Kubernetes?
+Which metrics does the Horizontal Pod Autoscaler (HPA) use by default to scale pods?
+What is the purpose of the ClusterIP service in Kubernetes?
+What happens if the desired replicas in a ReplicaSet are increased from 3 to 5?
+During a rolling update, which deployment strategy ensures zero downtime?
+What is the difference between a DaemonSet and a ReplicaSet in Kubernetes?
+How does Kubernetes ensure that resource quotas are enforced in a namespace?
+In Kubernetes, which component is responsible for maintaining the desired state of the cluster?
+How does Kubernetes communicate with different pods?
+Do pods get assigned unique IPs or do they store pod IP addresses in ConfigMaps?
+How are scaled-down pods handled in a Kubernetes Deployment?
+What happens when the associated node of a pod goes offline?
+What is the purpose of a service account in Kubernetes?
