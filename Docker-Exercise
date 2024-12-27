@@ -1,0 +1,22 @@
+first install Docker hub Locally
+
+docker pull ubuntu/apache2
+ 
+docker run -d -p 8080:80 --name apache-server --restart unless-stopped ubuntu/apache2:latest
+
+docker update --restart unless-stopped apache-server
+
+docker exec -it apache-server bash
+
+cd /var/www/html
+
+apt-get update
+
+apt-get install -y git
+
+git clone https://github.com/Suresh5992/OXER-HTML.git
+
+mv /var/www/html/OXER-HTML/* /var/www/html/
+
+http://localhost:8080
+
