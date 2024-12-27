@@ -20,3 +20,8 @@ mv /var/www/html/OXER-HTML/* /var/www/html/
 
 http://localhost:8080
 
+remove 
+docker stop apache-server
+docker rm apache-server
+docker rmi ubuntu/apache2:latest [ if you want to remove image ] 
+
