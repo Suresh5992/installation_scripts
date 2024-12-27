@@ -1,0 +1,17 @@
+# minikube install process with 
+link  :  https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+
+os : windows 
+Architecture  : x86 
+stable
+installer type : .exe download
+
+follow step 1 : 
+Make sure to run PowerShell as Administrator.
+follow step 2 : 
+
+note :  make sure on Docker hub on this Time , if not shows Error 
+
+minikube start
+minikube status 
+kubectl get po -A
