@@ -18,7 +18,7 @@ git clone https://github.com/Suresh5992/OXER-HTML.git
 
 mv /var/www/html/OXER-HTML/* /var/www/html/
 
-http://localhost:8080
+http://localhost:8080   [ locally running ]  
 
 remove 
 docker stop apache-server
