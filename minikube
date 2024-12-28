@@ -1,6 +1,7 @@
 # minikube install process with 
 link  :  https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
 
+# it will br Displayed like this 
 os : windows 
 Architecture  : x86 
 stable
@@ -15,3 +16,29 @@ note :  make sure on Docker hub on this Time , if not shows Error
 minikube start
 minikube status 
 kubectl get po -A
+
+
+# checking with sample Test whether Minikube  and kubernetes  is working or not 
+minikube version
+ 
+ kubectl config current-context
+kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4
+
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+
+kubectl get pods
+
+minikube service hello-minikube
+
+minikube logs
+kubectl delete service hello-minikube
+
+kubectl delete deployment hello-minikube
+
+
+
+
+
+
+
+
