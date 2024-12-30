@@ -71,27 +71,8 @@ docker tag suresh628/suresh-g-project:latest suresh628/suresh-g-project:latest
 docker push suresh628/suresh-g-project:latest
 
 DONE EASY PROCESS 
- 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-docker build -t suresh628/suresh-g-project:latest .
-
-
-
-create Docker file with nodepad and save into git project folder 
-Rename-Item "Dockerfile.txt" "Dockerfile"
 
 
 
