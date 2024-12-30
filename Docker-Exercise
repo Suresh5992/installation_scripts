@@ -25,3 +25,11 @@ docker stop apache-server
 docker rm apache-server
 docker rmi ubuntu/apache2:latest [ if you want to remove image ] 
 
+Note : 
+
+create Docker file with nodepad and save into git project folder 
+Rename-Item "Dockerfile.txt" "Dockerfile"
+
+
+
+
