@@ -37,6 +37,73 @@ kubectl delete deployment hello-minikube
 
 
 
+_________________________________________________________________________________________
+deployment.yaml:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suresh-g-project
+spec:
+  replicas: 1  # You can change this to scale the number of replicas
+  selector:
+    matchLabels:
+      app: suresh-g-project
+  template:
+    metadata:
+      labels:
+        app: suresh-g-project
+    spec:
+      containers:
+        - name: suresh-g-project
+          image: suresh628/suresh-g-project:latest  # Use your Docker image here
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: suresh-g-project-service
+spec:
+  selector:
+    app: suresh-g-project
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort  # You can use LoadBalancer or ClusterIP as needed
+
+
+________________________________________________________________
+
+step 1 : 
+
+& minikube -p minikube docker-env | Invoke-Expression
+
+docker info
+
+
+kubectl apply -f deployment.yaml
+
+kubectl get deployments
+kubectl get pods
+kubectl get svc
+
+minikube service suresh-g-project-service   [ important step]  it will dispalyed in broswer 
+
+kubectl get svc suresh-g-project-service
+
+minikube dashboard  [ kubernetes on pod it will open automatically on broswer ]  
+
+kubectl proxy --address='0.0.0.0' --port=8001  [ if you want acess Globally ]  
+
+
+
+
+
+
+
+
 
 
 
