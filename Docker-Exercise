@@ -27,6 +27,69 @@ docker rmi ubuntu/apache2:latest [ if you want to remove image ]
 
 Note : 
 
+LOCAL TO DOCKER HUB PUSH WITH POWERSHELL
+
+git clone https://github.com/Suresh5992/Suresh-G-Project.git
+
+cd Suresh-G-Project
+HERE: you need to create Docker file 
+
+Press Win + R, type notepad, and press Enter.
+
+n Notepad, go to File > Save As.
+Change the Save as type to All Files.
+Name the file Dockerfile (with no extension).
+Save it to the Suresh-G-Project directory.
+
+__________________________________________________________
+# Use an official Ubuntu base image
+FROM ubuntu/apache2:latest
+
+# Copy project files to the container
+COPY PG/ /var/www/html/
+
+# Expose port 80 for web traffic
+EXPOSE 80
+
+# Start Apache server
+CMD ["apache2-foreground"]
+
+_______________________________________________________
+
+ Rename-Item "Dockerfile.txt" "Dockerfile"    [ rename Dockerfile.txt to Dockerfile ] 
+
+ls
+docker build -t suresh628/suresh-g-project:latest .
+
+docker login
+
+NOTE :    
+cd C:\Users\bhukyasureshn\Suresh-G-Project   [ must in same repository  ] 
+ 
+docker build -t suresh628/suresh-g-project:latest .
+docker tag suresh628/suresh-g-project:latest suresh628/suresh-g-project:latest
+docker push suresh628/suresh-g-project:latest
+
+DONE EASY PROCESS 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker build -t suresh628/suresh-g-project:latest .
+
+
+
 create Docker file with nodepad and save into git project folder 
 Rename-Item "Dockerfile.txt" "Dockerfile"
 
