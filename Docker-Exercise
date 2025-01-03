@@ -27,7 +27,7 @@ docker rmi ubuntu/apache2:latest [ if you want to remove image ]
 
 Note : 
 
-LOCAL TO DOCKER HUB PUSH WITH POWERSHELL
+____________________________________ LOCAL TO DOCKER HUB PUSH WITH POWERSHELL___________________________________________________
 
 git clone https://github.com/Suresh5992/Suresh-G-Project.git
 
@@ -56,9 +56,13 @@ CMD ["apache2-foreground"]
 
 _______________________________________________________
 
+
+
  Rename-Item "Dockerfile.txt" "Dockerfile"    [ rename Dockerfile.txt to Dockerfile ] 
 
 ls
+
+
 docker build -t suresh628/suresh-g-project:latest .
 
 docker login
