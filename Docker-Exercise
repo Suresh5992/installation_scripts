@@ -43,6 +43,7 @@ Save it to the Suresh-G-Project directory.
 
 __________________________________________________________
 # Use an official Ubuntu base image
+# each application has it own Docker File 
 FROM ubuntu/apache2:latest
 
 # Copy project files to the container
